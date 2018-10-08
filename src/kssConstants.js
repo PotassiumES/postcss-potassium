@@ -4,6 +4,7 @@ module.exports = {
 		'scene',	// The root of the 3D tree
 		'node',		// Any node in the 3D tree, including the root
 		'group',
+		'text',
 
 		'bone',
 		'line',
