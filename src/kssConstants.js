@@ -1,6 +1,10 @@
 
 module.exports = {
-	spatialSelectors: [
+	somSelectors: [
+		'som',
+		'portal-som',
+		'immersive-som',
+
 		'scene',	// The root of the 3D tree
 		'node',		// Any node in the 3D tree, including the root
 		'group',
@@ -24,5 +28,17 @@ module.exports = {
 		'point-light',
 		'rect-area-light',
 		'spot-light'
+	],
+
+	domSelectors: [
+		'body',
+		'div',
+		'document',
+
+		'dom',
+		'flat-dom',
+		'portal-dom',
+		'flat-mode',
+		'overlay-mode'
 	]
 }
