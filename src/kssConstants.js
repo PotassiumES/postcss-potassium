@@ -2,6 +2,7 @@
 module.exports = {
 	somSelectors: [
 		'som',
+		'som-root',
 		'spatial-app',
 		'portal-app',
 		'immersive-app',
