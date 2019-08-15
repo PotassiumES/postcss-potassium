@@ -10,6 +10,7 @@ module.exports = {
 		'immersive-root',
 		'portal-som',
 		'immersive-som',
+		'som-input-group',
 
 		'scene',	// The root of the 3D tree
 		'node',		// Any node in the 3D tree, including the root
