@@ -17,23 +17,43 @@
     "url": "https://github.com/PotassiumES/postcss-potassium/issues"
   },
   "homepage": "https://github.com/PotassiumES/postcss-potassium",
+  "scripts": {
+    "lint-fix": "eslint --fix src/*.js",
+    "prettier-fix": "prettier --write src/*.js"
+  },
+  "eslintConfig": {
+    "extends": "eslint-config-postcss"
+  },
+  "husky": {
+    "hooks": {
+      "pre-commit": "lint-staged"
+    }
+  },
+  "lint-staged": {
+    "*.js": [
+      "eslint --fix",
+      "prettier --write"
+    ]
+  },
   "dependencies": {
     "postcss": "^6.0.16"
   },
   "devDependencies": {
-    "eslint": "^4.18.2",
-    "eslint-config-postcss": "^2.0.2",
-    "jest": "^22.4.2"
-  },
-  "scripts": {
-  },
-  "eslintConfig": {
-    "extends": "eslint-config-postcss/es5",
-    "env": {
-      "jest": true
-    }
-  },
-  "jest": {
-    "testEnvironment": "node"
+    "husky": "^4.2.5",
+    "lint-staged": "^10.2.11",
+    "prettier": "^2.0.5",
+    "@logux/eslint-config": "^40.0.1",
+    "eslint": "^7.0.32",
+    "eslint-config-postcss": "^4.0.0",
+    "eslint-config-standard": "^14.1.1",
+    "eslint-plugin-import": "^2.22.0",
+    "eslint-plugin-jest": "^23.18.0",
+    "eslint-plugin-node": "^11.1.0",
+    "eslint-plugin-prefer-let": "^1.0.2",
+    "eslint-plugin-prettierx": "^0.12.1",
+    "eslint-plugin-promise": "^4.2.1",
+    "eslint-plugin-security": "^1.4.0",
+    "eslint-plugin-standard": "^4.0.1",
+    "eslint-plugin-unicorn": "^21.0.0"
   }
 }
